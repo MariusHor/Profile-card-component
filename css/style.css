@@ -8,14 +8,14 @@
     --clr-dark-blue: hsl(229, 23%, 23%);
     --clr-dark-cyan: hsl(185, 75%, 39%);
     /*COLORS - NEUTRAL*/
-    --dark-grey: hsl(0, 0%, 59%);
+    --clr-dark-grey: hsl(0, 0%, 59%);
     /* TYPOGRAPHY */
     --fs-body: 1.8rem;
     --ff-primary: 'Kumbh Sans', sans-serif;
     --fw-400: 400;
     --fw-700: 700;
     /*BORDERS*/
-    --border-radius: 1rem;
+    --border-radius: 1.5rem;
 }
 
 /*-----------------------------------*\
@@ -107,6 +107,7 @@ select {
 body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
+    line-height: 1.7;
 }
 
 .wrapper {
@@ -114,7 +115,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: hidden;
   min-height: 100vh;
   position: relative;
   z-index: -1;
@@ -151,22 +151,77 @@ body {
 .main {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 8rem 1rem;
+  padding: 0 1rem;
 }
-
-
 
 /*-----------------------------------*\
  * #COMPONENT
 \*-----------------------------------*/
 
+.card {
+  flex: 1;
+  background: #fff;
+  max-width: 32rem;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
 
+.card__top {
+  background: url(../images/bg-pattern-card.svg);
+  height: 14rem;
+  display: flex;
+  justify-content: center;
+}
 
-/*-----------------------------------*\
- * #MEDIA QUERIES
-\*-----------------------------------*/
+.card__avatar {
+  border: solid 0.5rem white;
+  border-radius: 50%;
+  width: 9.6rem;
+  height: 9.6rem;
+  align-self: flex-end;
+  transform: translateY(50%);
+  overflow: hidden;
+}
 
-@media only screen and (min-width: 48rem) {
+.card__profile {
+  text-align: center;
+  margin: 7rem 0 2rem;
+}
 
+.card__user-name {
+  color: var(--clr-dark-blue);
+  font-weight: 700;
+  font-size: var(--fs-primary);
+}
+
+.card__user-age {
+  color: var(--clr-greyish-blue);
+  font-weight: 400;
+  margin-left: 0.4rem;
+}
+
+.card__user-location {
+  color: var(--clr-greyish-blue);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.stats {
+  border-top: solid 1px #e8e9ec;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 2rem 0;
+  line-height: 1.6;
+}
+
+.stats__value {
+  color: var(--clr-dark-blue);
+  font-weight: 700;
+}
+
+.stats__type {
+  color: var(--clr-greyish-blue);
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
 }
