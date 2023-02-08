@@ -25,8 +25,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: (https://www.frontendmentor.io/solutions/profile-card-component-using-bem-and-flexbox-Bkj8iVjSc)
-- Live Site URL: (https://mariushor.github.io/Profile-card-component/)
+- [Solution URL](https://www.frontendmentor.io/solutions/profile-card-component-using-bem-and-flexbox-Bkj8iVjSc)
+- [Live Site URL](https://mariushor.github.io/Profile-card-component/)
 
 ## My process
 
@@ -104,4 +104,4 @@ I am very pleased to have learned how to insert and position decorative images t
 
 ## Author
 
-- Frontend Mentor - (https://www.frontendmentor.io/profile/MariusHor)
+- Frontend Mentor - [@mariusHor](https://www.frontendmentor.io/profile/MariusHor)
